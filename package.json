@@ -1,0 +1,11 @@
+{
+  "name": "copy-link-bookmarklets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:andy23512/copy-link-bookmarklets.git",
+  "author": "andy23512 <andy23512@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "uglify-js": "^3.6.2"
+  }
+}
