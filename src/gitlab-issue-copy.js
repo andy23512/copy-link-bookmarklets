@@ -2,14 +2,14 @@
 (function () {
   var title = document.title
   var url = window.location.href
+
   var matchIssueNumber = url.match(/https:\/\/gitlab.com\/.*?\/issues\/(\d+)/)
   var matchIssueTitle = title.match(/^(.*?) \(#\d+\)/)
   if(!matchIssueNumber || matchIssueNumber.length != 2) return
   if(!matchIssueTitle || matchIssueTitle.length != 2) return
   var issueNumber = matchIssueNumber[1]
   var issueTitle = matchIssueTitle[1]
-  console.log(issueNumber)
-  console.log(issueTitle)
+
   var text = '[#'+issueNumber+ ' ' + issueTitle + '](' + url +')'
   var node = document.createElement('textarea')
   var selection = document.getSelection()

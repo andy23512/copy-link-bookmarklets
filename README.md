@@ -6,5 +6,5 @@ javascript:!function(e){var t=document.createElement("textarea"),o=document.getS
 
 ## Gitlab Issue Copy (src/gitlab-issue-copy.js)
 ```javascript
-javascript:!function(){var e=document.title,t=window.location.href,o=t.match(/https:\/\/gitlab.com\/.*?\/issues\/(\d+)/),n=e.match(/^(.*?) \(#\d+\)/);if(o&&2==o.length&&n&&2==n.length){var c=o[1],l=n[1];console.log(c),console.log(l);var d="[#"+c+" "+l+"]("+t+")",m=document.createElement("textarea"),a=document.getSelection();m.textContent=d,document.body.appendChild(m),a.removeAllRanges(),m.select(),document.execCommand("copy"),a.removeAllRanges(),document.body.removeChild(m)}}();
+javascript:!function(){var e=document.title,t=window.location.href,n=t.match(/https:\/\/gitlab.com\/.*?\/issues\/(\d+)/),o=e.match(/^(.*?) \(#\d+\)/);if(n&&2==n.length&&o&&2==o.length){var c="[#"+n[1]+" "+o[1]+"]("+t+")",d=document.createElement("textarea"),m=document.getSelection();d.textContent=c,document.body.appendChild(d),m.removeAllRanges(),d.select(),document.execCommand("copy"),m.removeAllRanges(),document.body.removeChild(d)}}();
 ```
