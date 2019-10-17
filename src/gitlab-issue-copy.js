@@ -23,4 +23,5 @@
 
   selection.removeAllRanges()
   document.body.removeChild(node)
+  window.alert('Copied')
 })()

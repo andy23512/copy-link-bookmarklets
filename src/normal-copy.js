@@ -12,4 +12,5 @@
 
   selection.removeAllRanges()
   document.body.removeChild(node)
+  window.alert('Copied')
 })('[' + document.title + '](' + window.location.href + ')')
